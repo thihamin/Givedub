@@ -52,6 +52,15 @@
 		50D6916B139B7B3100B6035E /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D6915E139B7B3100B6035E /* SBJsonUTF8Stream.m */; };
 		50D6916C139B7B3100B6035E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D69160139B7B3100B6035E /* SBJsonWriter.m */; };
 		50D6916F139B7B9600B6035E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D6916E139B7B9600B6035E /* Reachability.m */; };
+		50D69172139B82B900B6035E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D69171139B82B900B6035E /* Default.png */; };
+		50D69174139BF5B900B6035E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D69173139BF5B900B6035E /* Icon@2x.png */; };
+		50D69176139BF65A00B6035E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D69175139BF65A00B6035E /* Icon.png */; };
+		50D6917B139BFF7700B6035E /* ProjectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D69179139BFF7700B6035E /* ProjectDetailViewController.m */; };
+		50D6917C139BFF7700B6035E /* ProjectDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D6917A139BFF7700B6035E /* ProjectDetailViewController.xib */; };
+		50D6917F139C29C900B6035E /* projectsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D6917D139C29C900B6035E /* projectsIcon.png */; };
+		50D69180139C29C900B6035E /* projectsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D6917E139C29C900B6035E /* projectsIcon@2x.png */; };
+		50D69182139C369500B6035E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D69181139C369500B6035E /* MediaPlayer.framework */; };
+		50D69199139C3B8100B6035E /* AsyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D69198139C3B8100B6035E /* AsyImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +154,17 @@
 		50D69160139B7B3100B6035E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		50D6916D139B7B9600B6035E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		50D6916E139B7B9600B6035E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		50D69171139B82B900B6035E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		50D69173139BF5B900B6035E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		50D69175139BF65A00B6035E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		50D69178139BFF7700B6035E /* ProjectDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDetailViewController.h; sourceTree = "<group>"; };
+		50D69179139BFF7700B6035E /* ProjectDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDetailViewController.m; sourceTree = "<group>"; };
+		50D6917A139BFF7700B6035E /* ProjectDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectDetailViewController.xib; sourceTree = "<group>"; };
+		50D6917D139C29C900B6035E /* projectsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = projectsIcon.png; sourceTree = "<group>"; };
+		50D6917E139C29C900B6035E /* projectsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "projectsIcon@2x.png"; sourceTree = "<group>"; };
+		50D69181139C369500B6035E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		50D69197139C3B8000B6035E /* AsyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyImageView.h; sourceTree = "<group>"; };
+		50D69198139C3B8100B6035E /* AsyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D69182139C369500B6035E /* MediaPlayer.framework in Frameworks */,
 				507141B0139B74160001E3F0 /* libz.1.2.3.dylib in Frameworks */,
 				507141AE139B738A0001E3F0 /* SystemConfiguration.framework in Frameworks */,
 				507141AC139B73630001E3F0 /* CFNetwork.framework in Frameworks */,
@@ -197,6 +218,7 @@
 		50714169139B73090001E3F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50D69181139C369500B6035E /* MediaPlayer.framework */,
 				507141AF139B74160001E3F0 /* libz.1.2.3.dylib */,
 				507141AD139B738A0001E3F0 /* SystemConfiguration.framework */,
 				507141AB139B73630001E3F0 /* CFNetwork.framework */,
@@ -211,6 +233,7 @@
 		50714170139B73090001E3F0 /* Givedub */ = {
 			isa = PBXGroup;
 			children = (
+				50D69177139BFF3D00B6035E /* projects */,
 				50D6916D139B7B9600B6035E /* Reachability.h */,
 				50D6916E139B7B9600B6035E /* Reachability.m */,
 				50D69146139B7B3100B6035E /* SBJSON */,
@@ -225,10 +248,10 @@
 				50714183139B73090001E3F0 /* SecondViewController.m */,
 				50714185139B73090001E3F0 /* FirstView.xib */,
 				50714188139B73090001E3F0 /* SecondView.xib */,
+				50D69170139B82B900B6035E /* icons */,
 				50714171139B73090001E3F0 /* Supporting Files */,
-				50D69117139B769600B6035E /* ProjectViewController.h */,
-				50D69118139B769600B6035E /* ProjectViewController.m */,
-				50D69119139B769600B6035E /* ProjectViewController.xib */,
+				50D69197139C3B8000B6035E /* AsyImageView.h */,
+				50D69198139C3B8100B6035E /* AsyImageView.m */,
 			);
 			path = Givedub;
 			sourceTree = "<group>";
@@ -333,6 +356,31 @@
 			path = SBJSON;
 			sourceTree = "<group>";
 		};
+		50D69170139B82B900B6035E /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				50D6917D139C29C900B6035E /* projectsIcon.png */,
+				50D6917E139C29C900B6035E /* projectsIcon@2x.png */,
+				50D69175139BF65A00B6035E /* Icon.png */,
+				50D69173139BF5B900B6035E /* Icon@2x.png */,
+				50D69171139B82B900B6035E /* Default.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		50D69177139BFF3D00B6035E /* projects */ = {
+			isa = PBXGroup;
+			children = (
+				50D69117139B769600B6035E /* ProjectViewController.h */,
+				50D69118139B769600B6035E /* ProjectViewController.m */,
+				50D69119139B769600B6035E /* ProjectViewController.xib */,
+				50D69178139BFF7700B6035E /* ProjectDetailViewController.h */,
+				50D69179139BFF7700B6035E /* ProjectDetailViewController.m */,
+				50D6917A139BFF7700B6035E /* ProjectDetailViewController.xib */,
+			);
+			name = projects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,6 +453,12 @@
 				50714187139B73090001E3F0 /* FirstView.xib in Resources */,
 				5071418A139B73090001E3F0 /* SecondView.xib in Resources */,
 				50D6911B139B769600B6035E /* ProjectViewController.xib in Resources */,
+				50D69172139B82B900B6035E /* Default.png in Resources */,
+				50D69174139BF5B900B6035E /* Icon@2x.png in Resources */,
+				50D69176139BF65A00B6035E /* Icon.png in Resources */,
+				50D6917C139BFF7700B6035E /* ProjectDetailViewController.xib in Resources */,
+				50D6917F139C29C900B6035E /* projectsIcon.png in Resources */,
+				50D69180139C29C900B6035E /* projectsIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +521,8 @@
 				50D6916B139B7B3100B6035E /* SBJsonUTF8Stream.m in Sources */,
 				50D6916C139B7B3100B6035E /* SBJsonWriter.m in Sources */,
 				50D6916F139B7B9600B6035E /* Reachability.m in Sources */,
+				50D6917B139BFF7700B6035E /* ProjectDetailViewController.m in Sources */,
+				50D69199139C3B8100B6035E /* AsyImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,12 +624,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Will Rodenbusch (DGGCFRTD3M)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Givedub/Givedub-Prefix.pch";
 				INFOPLIST_FILE = "Givedub/Givedub-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8302E990-E77F-4607-8502-9361694E6F6A";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

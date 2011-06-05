@@ -10,6 +10,8 @@
 #import "ASIHTTPRequest.h"
 #import "NSObject+SBJson.h"
 #import "Project.h"
+#import "ProjectDetailViewController.h"
+
 
 @interface ProjectViewController (PrivateMethods)
 - (void) addProjects:(NSMutableArray*)aProjects;
@@ -30,7 +32,8 @@
 }
 
 - (void)dealloc
-{
+{   
+    [projects release];
     [super dealloc];
 }
 
@@ -61,6 +64,8 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    
+    self.mTableView = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -101,13 +106,19 @@
                     //NSLog(@"node=%@", node);
                     if ([nodeObject isKindOfClass:[NSDictionary class]]) {
                         NSDictionary *nodeDict = (NSDictionary*)nodeObject;
+                        NSLog(@"ID: %@", [nodeDict objectForKey:@"ID"]);
                         NSLog(@"name: %@", [nodeDict objectForKey:@"Name"]);
                         NSLog(@"Title: %@", [nodeDict objectForKey:@"Title"]);
                         NSLog(@"Goals: %@", [nodeDict objectForKey:@"GoalAmount"]);
                         
+                        
                         Project *project = [[Project alloc] init];
+                        project.projectId = [nodeDict objectForKey:@"ID"];
                         project.title = [nodeDict objectForKey:@"Title"];
                         project.location = [nodeDict objectForKey:@"Location"];
+                        project.name = [nodeDict objectForKey:@"Name"];
+                        project.school = [nodeDict objectForKey:@"School"];
+                        project.goalAmount = [nodeDict objectForKey:@"GoalAmount"];
                         [aProjects addObject:project];
                         [project release];
                     }
@@ -219,6 +230,15 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    
+    Project *aProject = [self.projects objectAtIndex:indexPath.row];
+    
+    ProjectDetailViewController *projectDetailViewController = [[ProjectDetailViewController alloc] initWithNibName:@"ProjectDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:projectDetailViewController animated:YES];
+    [projectDetailViewController addProject:aProject];
+    [projectDetailViewController loadProject];
+    [projectDetailViewController release];
+    
 }
 
 
